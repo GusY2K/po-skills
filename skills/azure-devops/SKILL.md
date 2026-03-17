@@ -60,7 +60,9 @@ Detect the user's intent and route to the correct capability. Ask if ambiguous.
 
 Reads ANY document and creates Azure DevOps work items at the appropriate level.
 
-**Load reference:** `references/backlog-creator.md` for the full step-by-step execution flow.
+**Load references:**
+- `references/content-detection.md` — How to classify document type, detect item types, handle ambiguity, translate non-technical client language, decompose, and manage assumptions
+- `references/backlog-creator.md` — Full step-by-step execution flow for creating items
 
 ### Step 0: Classify the Document
 
