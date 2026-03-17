@@ -5,8 +5,9 @@ const path = require('path');
 const readline = require('readline');
 
 // ANSI colors (zero dependencies, like GSD)
-const cyan = '\x1b[36m';
-const green = '\x1b[32m';
+// Brand color: #00F0A0 → RGB(0, 240, 160)
+const brand = '\x1b[38;2;0;240;160m';
+const green = '\x1b[38;2;0;240;160m';
 const yellow = '\x1b[33m';
 const red = '\x1b[31m';
 const dim = '\x1b[2m';
@@ -17,7 +18,7 @@ const pkg = require('../package.json');
 
 // ─── Banner ───────────────────────────────────────────────
 const banner = '\n' +
-  cyan + '   ██████╗ ██╗   ██╗███████╗██╗   ██╗██████╗ ██╗  ██╗\n' +
+  brand + '   ██████╗ ██╗   ██╗███████╗██╗   ██╗██████╗ ██╗  ██╗\n' +
   '  ██╔════╝ ██║   ██║██╔════╝╚██╗ ██╔╝╚════██╗██║ ██╔╝\n' +
   '  ██║  ███╗██║   ██║███████╗ ╚████╔╝  █████╔╝█████╔╝\n' +
   '  ██║   ██║██║   ██║╚════██║  ╚██╔╝  ██╔═══╝ ██╔═██╗\n' +
@@ -181,7 +182,7 @@ async function main() {
 
   console.log(`  ${bold}Skills found:${reset}`);
   for (const skill of skills) {
-    console.log(`  ${cyan}•${reset} ${skill.name}`);
+    console.log(`  ${brand}•${reset} ${skill.name}`);
   }
   console.log('');
 
