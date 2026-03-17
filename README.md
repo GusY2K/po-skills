@@ -1,34 +1,31 @@
-<h1 align="center">Y2K LABS</h1>
+<div align="center">
 
-<p align="center">
-  Agent skills for the entire software development lifecycle.<br>
-  Azure DevOps, backlog automation, sprint planning, and more.
-</p>
+# Y2K LABS
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/y2k-labs"><img src="https://img.shields.io/npm/v/y2k-labs?color=00F0A0&label=NPM" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/y2k-labs"><img src="https://img.shields.io/npm/dm/y2k-labs?color=00F0A0&label=DOWNLOADS" alt="npm downloads"></a>
-  <a href="https://github.com/GusY2K/y2k-labs/stargazers"><img src="https://img.shields.io/github/stars/GusY2K/y2k-labs?color=00F0A0&label=STARS&style=flat" alt="GitHub stars"></a>
-  <a href="https://github.com/GusY2K/y2k-labs"><img src="https://img.shields.io/github/license/GusY2K/y2k-labs?color=00F0A0&label=LICENSE" alt="license"></a>
-</p>
+**Agent skills for the entire software development lifecycle. Azure DevOps automation, backlog creation from documents, sprint planning, health auditing, and work item templates.**
 
-<p align="center">
-  A complete agent skills collection for <strong>Claude Code</strong>, <strong>Cursor</strong>, <strong>GitHub Copilot</strong>, <strong>Windsurf</strong>, <strong>Cline</strong>, and <a href="https://github.com/vercel-labs/skills">40+ AI agents</a>.
-</p>
+**Built for Claude Code, Cursor, GitHub Copilot, Windsurf, Cline, and [40+ AI agents](https://github.com/vercel-labs/skills).**
 
----
+[![npm version](https://img.shields.io/npm/v/y2k-labs?style=for-the-badge&logo=npm&logoColor=white&color=00F0A0)](https://www.npmjs.com/package/y2k-labs)
+[![npm downloads](https://img.shields.io/npm/dm/y2k-labs?style=for-the-badge&logo=npm&logoColor=white&color=00F0A0)](https://www.npmjs.com/package/y2k-labs)
+[![GitHub stars](https://img.shields.io/github/stars/GusY2K/y2k-labs?style=for-the-badge&logo=github&color=00F0A0)](https://github.com/GusY2K/y2k-labs)
+[![License](https://img.shields.io/badge/license-Apache--2.0-00F0A0?style=for-the-badge)](LICENSE.txt)
 
-## Install
+<br>
 
 ```bash
 npx y2k-labs -g
 ```
 
-<p align="center">Works on Mac, Windows, and Linux.</p>
+**Works on Mac, Windows, and Linux.**
 
-<p align="center">
-  <img src="assets/banner-preview.png" alt="Y2K Labs terminal" width="600">
-</p>
+<br>
+
+<img src="assets/banner-preview.png" alt="Y2K Labs terminal" width="600">
+
+<br>
+
+</div>
 
 ---
 
