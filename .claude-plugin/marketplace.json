@@ -6,8 +6,8 @@
   },
   "metadata": {
     "description": "Product Owner skills for Azure DevOps backlog management and work item automation.",
-    "version": "1.0.0",
-    "tags": ["azure-devops", "product-owner", "backlog", "agile", "scrum"]
+    "version": "2.0.0",
+    "tags": ["azure-devops", "product-owner", "backlog", "agile", "scrum", "sprint-planning", "health-audit", "templates"]
   },
   "plugins": [
     {
@@ -16,7 +16,10 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/azure-devops-backlog-creator"
+        "./skills/azure-devops-backlog-creator",
+        "./skills/backlog-health-audit",
+        "./skills/sprint-planner",
+        "./skills/work-item-templates"
       ]
     }
   ]

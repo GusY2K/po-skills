@@ -8,10 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Planned
-- `backlog-health-audit` skill — scan existing backlog for missing acceptance criteria, orphans, duplicates, and stale items
-- `sprint-planner` skill — auto-assign backlog items to sprints based on velocity and dependencies
-- `work-item-templates` skill — pre-built templates for common patterns (API endpoint, frontend page, DB migration)
-- Multi-runtime support (Cursor, Copilot, Windsurf native configs)
+- Multi-runtime native configs (Cursor, Copilot, Windsurf)
+- Demo GIF for README
+- Hosted documentation
+
+## [2.0.0] - 2026-03-17
+
+### Added
+- **`backlog-health-audit` skill** — Scans existing Azure DevOps backlog and generates a 0-100 health score. Detects 12 issue types across 4 severity levels (CRITICAL, HIGH, MEDIUM, LOW): missing acceptance criteria, orphaned tasks, stale items, duplicate titles, empty descriptions, unestimated stories, and more. Optional `--fix` for auto-fixing LOW severity issues.
+- **`sprint-planner` skill** — Reads backlog and suggests optimal sprint assignments based on team velocity (auto-calculated from last 3 sprints), priority ordering, and dependency analysis. Flags oversized items, underloaded sprints, and dependency conflicts. Optional `--assign` to move items to iterations after approval.
+- **`work-item-templates` skill** — 18 pre-built templates for common patterns: `api-endpoint`, `crud-feature`, `auth-flow`, `database-migration`, `frontend-page`, `dashboard`, `cicd-pipeline`, `monitoring`, `security-hardening`, `bug-fix`, and 8 more. Each generates a complete Feature → Stories → Tasks hierarchy with acceptance criteria and story points.
+- GitHub SEO: 12 topic tags, keyword-rich description, npm homepage link
+- Social preview image (1280x640) for link unfurling
+- CHANGELOG.md following Keep a Changelog format
+- `.editorconfig` and `.gitattributes` for code quality signals
+- npm downloads and GitHub stars badges in README
+- Pushy SKILL.md description with comprehensive trigger list for auto-detection
 
 ## [1.1.0] - 2026-03-17
 
@@ -43,6 +55,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `.claude-plugin/marketplace.json` for plugin discovery
 - Apache 2.0 license
 
-[Unreleased]: https://github.com/GusY2K/po-skills/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/GusY2K/po-skills/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/GusY2K/po-skills/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/GusY2K/po-skills/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/GusY2K/po-skills/releases/tag/v1.0.0

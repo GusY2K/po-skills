@@ -98,7 +98,16 @@ npx skills rm -g azure-devops-backlog-creator   # global
 
 ---
 
-## Skills
+## Skills (4)
+
+| Skill | Description |
+|-------|-------------|
+| [azure-devops-backlog-creator](#azure-devops-backlog-creator) | Document → full backlog with hierarchy |
+| [backlog-health-audit](#backlog-health-audit) | Scan backlog for quality issues and generate health report |
+| [sprint-planner](#sprint-planner) | Auto-assign items to sprints based on velocity |
+| [work-item-templates](#work-item-templates) | Generate standard work items from 18 proven templates |
+
+---
 
 ### azure-devops-backlog-creator
 
@@ -196,6 +205,92 @@ bash scripts/rollback.sh backlog-creator-20260317-143022 --confirm
 - `.md` — PRDs, specs, feature briefs, design docs
 - `.txt` — Meeting notes, requirements lists
 - Any text file Claude Code can read
+
+---
+
+### backlog-health-audit
+
+Scans your existing Azure DevOps backlog and generates a health report with a **0-100 score**.
+
+**Detects:**
+- User Stories without acceptance criteria (CRITICAL)
+- Bugs without repro steps (CRITICAL)
+- Active items with no assignee (CRITICAL)
+- Orphaned Tasks with no parent (HIGH)
+- Stories without story points (HIGH)
+- Stale items not updated in 30+ days (MEDIUM)
+- Empty descriptions (MEDIUM)
+- Unbalanced sprint loads (MEDIUM)
+- Items without tags (LOW)
+
+```bash
+# Audit the full backlog
+/backlog-health-audit
+
+# Audit specific sprint, save report
+/backlog-health-audit --iteration="Sprint 5" --output=health-report.md
+
+# Auto-fix LOW severity issues
+/backlog-health-audit --fix
+```
+
+Or just say: *"audit my backlog"* / *"check my board health"*
+
+---
+
+### sprint-planner
+
+Reads your backlog and suggests optimal sprint assignments based on **velocity, priority, and dependencies**.
+
+**Features:**
+- Auto-calculates velocity from last 3 sprints
+- Priority-first ordering (P1 before P2)
+- Dependency-aware (predecessors before successors)
+- Flags oversized items that need splitting
+- Load balancing across sprints (targets 80-90% capacity)
+- Can create iterations and move items after approval
+
+```bash
+# Plan next 3 sprints automatically
+/sprint-planner
+
+# Custom velocity, 5 sprints
+/sprint-planner --velocity=40 --sprints=5
+
+# Save plan and assign items after review
+/sprint-planner --output=sprint-plan.md --assign
+```
+
+Or just say: *"plan the next sprint"* / *"distribute the backlog across sprints"*
+
+---
+
+### work-item-templates
+
+Generate standardized work items from **18 proven templates** for common development patterns.
+
+**Templates:**
+
+| Category | Templates |
+|----------|-----------|
+| Backend | `api-endpoint`, `database-migration`, `background-job`, `api-integration`, `microservice` |
+| Frontend | `frontend-page`, `form-workflow`, `dashboard`, `responsive-redesign` |
+| Full Stack | `crud-feature`, `auth-flow`, `search`, `file-upload`, `notifications` |
+| DevOps | `cicd-pipeline`, `monitoring`, `security-hardening` |
+| Bug Fix | `bug-fix`, `performance-fix` |
+
+```bash
+# Generate a full CRUD feature backlog
+/work-item-templates crud-feature --title="Product Catalog"
+
+# API endpoint template, dry run
+/work-item-templates api-endpoint --title="User Profile API" --dry-run
+
+# Show all available templates
+/work-item-templates
+```
+
+Or just say: *"create a CRUD feature template for Orders"* / *"generate API endpoint tasks"*
 
 ---
 
