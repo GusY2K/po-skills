@@ -1,7 +1,7 @@
 # po-skills
 
 <p align="center">
-  <img src="assets/banner-preview.svg" alt="po-skills banner" width="620">
+  <img src="assets/banner-preview.png" alt="po-skills banner" width="620">
 </p>
 
 <p align="center">

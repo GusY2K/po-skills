@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0A0E12;
+    margin: 0;
+    padding: 0;
+  }
+  .terminal {
+    font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+    background: #0A0E12;
+    border-radius: 10px;
+    width: 660px;
+    overflow: hidden;
+    border: 1px solid #282C34;
+  }
+  .titlebar {
+    background: #1A1E24;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .dot-red { background: #FF5F56; }
+  .dot-yellow { background: #FFBD2E; }
+  .dot-green { background: #27C93F; }
+  .title { color: #555; font-size: 12px; flex: 1; text-align: center; }
+  .content {
+    padding: 16px 28px 28px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #D0D0D0;
+  }
+  .brand { color: #00F0A0; }
+  .bold { color: #fff; font-weight: 700; }
+  .dim { color: #555; }
+  pre {
+    margin: 0;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .cmd { color: #555; margin-bottom: 12px; }
+  .cmd span { color: #00F0A0; }
+  .info { margin-top: 14px; }
+  .info div { margin-bottom: 1px; }
+  .skills { margin-top: 12px; }
+  .result { margin-top: 12px; }
+  .success-box {
+    border: 1.5px solid #00F0A0;
+    color: #D0D0D0;
+    padding: 6px 20px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="titlebar">
+    <div class="dot dot-red"></div>
+    <div class="dot dot-yellow"></div>
+    <div class="dot dot-green"></div>
+    <span class="title">po-skills &mdash; npm</span>
+  </div>
+  <div class="content">
+    <div class="cmd"><span>$</span> npx po-skills -g</div>
+<pre class="brand">   ██████╗ ██╗   ██╗███████╗██╗   ██╗██████╗ ██╗  ██╗
+  ██╔════╝ ██║   ██║██╔════╝╚██╗ ██╔╝╚════██╗██║ ██╔╝
+  ██║  ███╗██║   ██║███████╗ ╚████╔╝  █████╔╝█████╔╝
+  ██║   ██║██║   ██║╚════██║  ╚██╔╝  ██╔═══╝ ██╔═██╗
+  ╚██████╔╝╚██████╔╝███████║   ██║   ███████╗██║  ██╗
+   ╚═════╝  ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝</pre>
+    <div class="info">
+      <div><span class="bold">PO Skills</span> <span class="dim">v1.0.0</span></div>
+      <div>Product Owner agent skills for Azure DevOps.</div>
+      <div>Reads documents and creates full backlogs automatically.</div>
+    </div>
+    <div class="skills">
+      <div><span class="bold">Skills found:</span></div>
+      <div><span class="brand">&bull;</span> azure-devops-backlog-creator</div>
+    </div>
+    <div class="result">
+      <div><span class="brand">&#10003;</span> Installed to <span class="dim">~/.claude/skills/</span></div>
+      <div class="success-box">Installation complete!</div>
+    </div>
+  </div>
+</div>
+</body></html>
