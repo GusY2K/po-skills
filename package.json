@@ -1,6 +1,6 @@
 {
   "name": "po-skills",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Product Owner agent skills for Azure DevOps. Reads documents and creates full backlogs automatically.",
   "bin": {
     "po-skills": "bin/install.js"
